@@ -9,38 +9,42 @@
 <style>
     .col-4
     {
-
+     
+    }
+    *{
+        margin:0px;
+        padding:0;
     }
 </style>
 </head>
 <body>
-    <center><h1 class="text-primary">Car World</h1></center>
+    <h1 style="text-align: center; text-shadow: 2px 2px 2px rgb(127, 82, 82);" class="text-dark">Car World</h1>
 <br><br>
     <div class="row m-1 ">
-        <div class="col-4 bg-light rounded">
-            <h2 class="text-primary">Enter Details</h2>
+        <div class="col-4 bg-light rounded ">
+            <h5 class="text-primary">Enter Details</h2>
             <label for="brand">Car Brand</label>
             <input type="text" id="brand" placeholder="Car Brand" class="form-control" required>
             <label for="price">Price</label>
             <input type="text" id="price" placeholder="Price" class="form-control" required>
             <label for="key">Key</label>
             <input type="text" name="key" id="key" placeholder="key" class="form-control" required>
-            <button class="btn border-success m-1" id="store" onclick="storefn()">Store Records</button>
+            <button class="btn btn-success m-1" id="store" onclick="storefn()">Store Records</button>
 
         </div>
 
-        <div class="col-4 bg-light rounded">
-            <h2 class="text-primary">Enter Key to Retrieve Item</h2>
+        <div class="col-4 bg-light rounded ">
+            <h5 class="text-primary">Enter Key to Retrieve Item</h2>
             <label for="retkey" >Key</label>
             <input type="text" class="form-control" id="retkey">
-            <button class="btn border-primary m-1" onclick="retfn()">Retrieve Records</button>
+            <button class="btn btn-primary m-1" onclick="retfn()">Retrieve Records</button>
             <div id="result"></div>
         </div>
-        <div class="col-4 bg-light rounded">
-            <h2 class="text-primary">Enter Key to Delete Item</h2>
+        <div class="col-4 bg-light rounded ">
+            <h5 class="text-primary">Enter Key to Delete Item</h2>
             <label for="remkey">Key</label>
             <input type="text" placeholder="Key" class="form-control" id="remkey">
-            <button  onclick="remfn()" class="form-control m-1 btn border-danger">Remove Records</button>
+            <button  onclick="remfn()" class=" m-1 btn btn-danger">Remove Records</button>
         </div>
     </div>
     <br>
